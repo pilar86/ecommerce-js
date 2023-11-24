@@ -1,0 +1,98 @@
+[
+    {
+        "img": "./img/BoC-camaro.jpg",
+        "nombre":"SOFA CAMARO",
+        "precio": "5.390.123"
+    },
+
+    {
+        "img": "./img/BoC-SOF-AMSTERDAM.jpg",
+        "nombre":"SOFA AMSTERDAM",
+        "precio": "289000"
+    },
+    {
+        "img": "./img/BoC-SOF-MODENA.jpg",
+        "nombre":"SOFA MODENA",
+        "precio": "390000"
+    },
+
+    {
+        "img": "./img/BoC-but-1.jpg",
+        "nombre":"BUTACA FUSION",
+        "precio": "146000"
+    },
+
+    {
+        "img": "./img/porto-azul.jpg",
+        "nombre":"BUTACA PORTO",
+        "precio": "180000"
+    },
+
+    {
+        "img": "./img/BoC-but-3.jpg",
+        "nombre":"BUTACA IMOLA",
+        "precio": "235000"
+    } ,
+    
+    {
+        "img": "./img/BoC-FLamp1.jpg",
+        "nombre":"LÁMPARA OUTRINGGER",
+        "precio": "175480"
+    } ,
+
+    {
+        "img": "./img/BoC-FLamp2-CHELSEA.jpg",
+        "nombre":"LÁMPARA CHELSEA ",
+        "precio": "175000 "
+    },
+    {
+        "img": "./img/BoC-HLamp1.jpg ",
+        "nombre":"LÁMPARA FIVE ",
+        "precio": "133890"
+    },
+    {
+        "img": "./img/BoC-HLamp2.jpg ",
+        "nombre":"LÁMPARA PINK ",
+        "precio": "165890"
+    },
+
+
+    {
+        "img": "./img/BoC-MArrime1.jpg ",
+        "nombre":"MESA BLACK ",
+        "precio": "230800 "
+    },
+    {
+        "img": "./img/BoC-MCentro2.jpg",
+        "nombre":"MESA GREY ",
+        "precio": "255345 "
+    },
+    {
+        "img": "./img/BoC-MCentro1.jpg ",
+        "nombre":"MESA MARFIL",
+        "precio": "235890"
+    },
+
+    {
+        "img": "./img/BoC-DT1-granada.jpg ",
+        "nombre":"MESA GRANADA ",
+        "precio": "198755"
+    },
+    {
+        "img": "./img/BoC-DT2.jpg ",
+        "nombre":"MESA MADRID ",
+        "precio": "185690 "
+    },
+    {
+        "img": "./img/BoC-DT3-billund.jpg ",
+        "nombre":"MESA BILUND ",
+        "precio": "185000"
+    }
+
+]
+
+
+
+
+
+

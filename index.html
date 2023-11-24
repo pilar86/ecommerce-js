@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Nordic Furniture Shop</title>
+   
+    <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;1,100;1,200&family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300&family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap" rel="stylesheet">
+   
+
+
+    <link rel="stylesheet" href="styles.css">
+   
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+
+    <script defer src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!--<script defer src="jquery/jquery-3.3.1.min.js"></script>-->
+    <script defer src="contenidoFetch.js"></script>
+    <script defer src="variablesFetch.js"></script>
+    <script defer src="productosFetch.js"></script>
+    <script defer src="stock.js"></script>
+    <script defer src="modals.js"></script>
+    
+</head>
+<body>
+    <header>
+
+        <h1 id="titulo" class="titulo">NORDIC FURNITURE</h1>
+        <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
+       
+    </header>
+
+    <div class="newsletter">
+
+        <h2 id="titulo-newsletter">SUSCRIBITE PARA SABER SOBRE NUEVOS INGRESOS Y DESCUENTOS</h2>
+        <h3 id="titulo2-newsletter">NO TE PIERDAS LAS TENDENCIAS SOBRE MOBILIARIO Y DECORACIÓN!!!</h3>
+        
+        <form action=""  id="news-form">
+             <div class="center"> 
+            <input type="text" email="" id="email-form" placeholder="Ingresa tu email"><span class="barra"></span> <br>
+            <button type="submit-btn" class="news-button">Suscribite</button>
+            </div>
+        </form>
+
+    </div>
+
+
+    <!--CARDS CON LOS PRODUCTOS-----------y----------CONTENIDO DESDE LA API-->
+    <main id="contenedor-productos">
+    </main>
+
+    
+    <!--VENTANA DEL CARRITO DE COMPRAS-->
+    <section class="modal-contenedor">
+        <div class="modal-carrito">
+            <h4>Mi Carrito</h4>
+            <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+            <div id="carrito-contenedor">  
+                <!-- Acá se muestran los productos en el carrito -->
+            </div>
+            <p id="mensaje-carrito-vacio" style="display:none;">Aún no hay productos en tu carrito</p>
+            <h4 id="precioTotal" style="display:none;">Precio total: $ <span id="totalCompra"></span></h4>
+            <button id="vaciar-carrito" style="display:none;" class="boton-agregar">Vaciar carrito</button>
+            <button id="finalizar-compra" style="display:none;" class="boton-agregar">Finalizar compra</button>
+        </div>
+    </section>
+    
+
+    
+
+    <!--FORMULARIO DE CONTACTO/NEWSLETTER-->
+    <form action="" method="POST" id="form">
+        <div class="form">
+            <div class="contact-box">
+                
+                <div class="left"></div>
+                    <div class="right">
+                        <h5>CONTACTANOS</h5>
+
+                            <div class="grupo">
+                                <label for="name">Nombre</label>
+                                <input type="text" name="name" id="name"><span class="barra"></span>                           
+                            </div>
+                            <p class="warnings" id="warning-name-container"></p>
+                            
+
+                            <div class="grupo">
+                                <label for="email" >Email</label>
+                                <input type="text" email="email" id="email"><span class="barra"></span>
+                            </div>
+                            <p class="warnings" id="warning-email-container"></p>
+
+                            <div class="grupo">
+                                <label for="message">Dejanos Tu Consulta</label>			
+                                <textarea id="message" required placeholder=" "></textarea>
+                            </div>
+                            <p class="warnings" id="warning-message-container"></p>
+                            
+                        <button type="submit" id="btn2" class="form-button">Enviar</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>      
+	
+
+    <script defer src="contactForm.js"></script>
+    <script defer src="carrito.js"></script>
+</body>
+</html>
