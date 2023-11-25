@@ -2,7 +2,6 @@ const nombre = document.getElementById("name")
 const email = document.getElementById("email")
 const message = document.getElementById("message")
 const form = document.getElementById("form")
-
 const warningNameContainer = document.getElementById("warning-name-container");
 const warningEmailContainer = document.getElementById("warning-email-container");
 const warningMessageContainer = document.getElementById("warning-message-container");
@@ -10,7 +9,6 @@ const warningMessageContainer = document.getElementById("warning-message-contain
 
 form.addEventListener("submit", e=>{
     e.preventDefault();
-
 
     let enviar = false
     let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
@@ -29,7 +27,7 @@ form.addEventListener("submit", e=>{
         enviar = true;
     }
     if(enviar){
-        warningMessageContainer.innerHTML = "Por favor, corrija los errores antes de enviar el formulario.";
+        warningMessageContainer.innerHTML = "Por favor, asegurese de que la información de los campos sea correcta y estén completos.";
     }else{
         warningMessageContainer.innerHTML = "";
         envio();

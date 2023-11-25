@@ -80,20 +80,17 @@ finalizarCompraButton.addEventListener('click', () => {
         totalCompraElement.style.display = 'block';
         finalizarCompraButton.style.display = 'block';
         vaciarCarritoButton.style.display = 'block';
-    }
-            
+    }      
             
         contadorCarrito.innerText = carrito.length;
         localStorage.setItem('carrito', JSON.stringify(carrito));
     
     };
 
-
         botonVaciar.addEventListener('click', () => {
         carrito.length = 0
         actualizarCarrito();
         });
-
 
 
         stockProductos.forEach((producto) => {

@@ -1,8 +1,7 @@
 const retornoCardProducto = (contenido)=> {
     const {img, nombre, precio, id} = contenido
     return `<main id="contenedor-productos">
-            </main>
-            
+            </main>  
                     <img src=${img} alt= "">
                     <h5>${nombre}</h5>
                     <p class="precioProducto">Precio:$ ${precio}</p>
@@ -10,14 +9,11 @@ const retornoCardProducto = (contenido)=> {
                     `
 }
 
-
-
 const obtenerContenido = (URL)=> {
     let cardsProductos = ""
         fetch(URL)
         .then((response)=> response.json())
         .then((data)=> {
-            //console.table(data)
             for (contenido of data) {
                 cardsProductos += retornoCardProducto(contenido)
             }

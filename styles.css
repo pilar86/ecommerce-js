@@ -564,6 +564,22 @@ textarea::-webkit-scrollbar-thumb {
     padding-top: 8px;
 }
 
+div:where(.swal2-container).swal2-center>.swal2-popup{
+    border-radius: 8px;
+    background-color: rgb(252, 246, 241);
+}
+
+div:where(.swal2-container) h2:where(.swal2-title){
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: 10px;
+    
+}
+
+.swal2-html-container{
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+
 
 
 @media screen and (max-width: 880px){
