@@ -18,22 +18,43 @@
         flex-wrap: wrap;
     }
 
+    .fa-shopping-cart:before{
+        font-size: 18px;
+    }
+    span#contadorCarrito{
+        font-size: 20px;
+    }
+
     h1.titulo{
-        margin-bottom: 2px;
-        font-size: 35px;
+        margin-bottom: 20px 8px;
+        font-size: 50px;
         letter-spacing:4px;
     }
 
     h2#titulo-newsletter{
-       font-size: 22px; 
+       font-size: 16px; 
        letter-spacing: 2px;
+       margin-bottom: 10px;
     }
 
-    .fa-trash-alt:before{
-        color: rgb(179, 144, 126);
-        font-weight: 300;
-        font-size: 18px;
+    h3#titulo2-newsletter {
+        font-size: 16px;
+        font-weight: 200;
+        letter-spacing: 2px;
+        margin-bottom: 30px;
     }
+
+    h4.precioProducto{
+        font-family: 'Roboto Flex', sans-serif;
+        font-weight: 200;
+        font-size: 18px;
+        letter-spacing: 2px; 
+    }
+    
+    .newsletter{
+        width: 85%;
+    }
+    
     p.texto-carrito {
         margin-bottom: 5px;
         font-family: 'Roboto Flex', sans-serif;
@@ -53,22 +74,22 @@
         letter-spacing: 1px;
     }
 
-    h3#titulo2-newsletter {
-        font-size: 20px;
-        font-weight: 200;
-        letter-spacing: 2px;
+    .center input#email-form {
+        font-size: 14px;
+        margin-top:12px;
+        width: 90%;
     }
-    h4.precioProducto{
-        font-family: 'Roboto Flex', sans-serif;
-        font-weight: 200;
-        font-size: 18px;
-        letter-spacing: 2px; 
+    
+    button.news-button{
+        font-size: 16px;
+        margin-top:14px;
+        width: 90%;
+        margin-bottom: 22px;
     }
 
     .productoEnCarrito{
         flex-direction: column;  
     }
-    
     
     .boton-eliminar {
         font-weight: 10;
@@ -93,7 +114,7 @@ header {
     background-color: rgba(231, 231, 231, 0.644);
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items:center;
     padding: 18px;
     box-shadow: 0px 5px 4px 3px rgba(168, 163, 149, 0.3);
     margin-bottom: 2px;
@@ -109,8 +130,12 @@ header {
     font-size: 26px;
     background-color: white;
     border-radius: 6px;
-    padding: 8px 12px;
+    padding: 8px 10px;
     transition: all .3s;
+}
+
+span#contadorCarrito{
+    padding-left: 8px;
 }
 
 #boton-carrito:hover {
@@ -120,6 +145,17 @@ header {
 }
 #boton-carrito:focus {
     outline: none;  
+}
+
+.fa, .fas
+.fa-shopping-cart:before{
+    color: rgb(250, 250, 250);
+    font-size: 14px;
+    font-weight: lighter;
+}
+span#contadorCarrito{
+    padding-left: 8px;
+    color: rgb(168, 156, 150);
 }
 
 h1 {
@@ -189,7 +225,7 @@ p {
     display: block;
     justify-content: center;
     align-items: center;
-    padding:20px;
+    padding: 20px;
     border-radius: 10px;
 }
 
@@ -236,8 +272,6 @@ input#email-form{
     border-radius: 4px;
 }
 
-
-
                                             /* CONTENEDOR DE PRODUCTOS/CARDS */
 #contenedor-productos {
     max-width: 1400px;
@@ -258,7 +292,6 @@ input#email-form{
     margin-bottom: 25px;
     box-shadow: 2px 5px 3px 3px rgba(212, 211, 207, 0.542);
 }
-
 
 p.precioProducto {
     color: #a08f82;
@@ -283,6 +316,7 @@ p.precioProducto {
     display: inline-block;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .boton-agregar:hover {

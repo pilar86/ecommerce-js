@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta name="description" content="Tienda de mobiliario de estilo nórdico para todo tipo de espacios. Encuentra las mejores piezas de linea nórdica">
+    <meta name="keywords" content="mobiliario nórdico, diseño escandinavo, materiales de calidad, diseño danés, simplicidad estética">
     <title>Nordic Furniture Shop</title>
    
     <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
@@ -19,14 +19,7 @@
    
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
 
-    <script defer src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-    <!--<script defer src="jquery/jquery-3.3.1.min.js"></script>-->
-    <script defer src="contenidoFetch.js"></script>
-    <script defer src="variablesFetch.js"></script>
-    <script defer src="productosFetch.js"></script>
-    <script defer src="stock.js"></script>
-    <script defer src="modals.js"></script>
+    
     
 </head>
 <body>
@@ -50,12 +43,9 @@
         </form>
 
     </div>
-
-
     <!--CARDS CON LOS PRODUCTOS-----------y----------CONTENIDO DESDE LA API-->
     <main id="contenedor-productos">
     </main>
-
     
     <!--VENTANA DEL CARRITO DE COMPRAS-->
     <section class="modal-contenedor">
@@ -71,16 +61,13 @@
             <button id="finalizar-compra" style="display:none;" class="boton-agregar">Finalizar compra</button>
         </div>
     </section>
-    
-
-    
 
     <!--FORMULARIO DE CONTACTO/NEWSLETTER-->
     <form action="" method="POST" id="form">
         <div class="form">
-            <div class="contact-box">
-                
+            <div class="contact-box"> 
                 <div class="left"></div>
+                    
                     <div class="right">
                         <h5>CONTACTANOS</h5>
 
@@ -88,30 +75,32 @@
                                 <label for="name">Nombre</label>
                                 <input type="text" name="name" id="name"><span class="barra"></span>                           
                             </div>
-                            <p class="warnings" id="warning-name-container"></p>
-                            
-
+                            <p class="warnings" id="warning-name-container"></p>  
                             <div class="grupo">
                                 <label for="email" >Email</label>
                                 <input type="text" email="email" id="email"><span class="barra"></span>
                             </div>
                             <p class="warnings" id="warning-email-container"></p>
-
                             <div class="grupo">
                                 <label for="message">Dejanos Tu Consulta</label>			
                                 <textarea id="message" required placeholder=" "></textarea>
                             </div>
-                            <p class="warnings" id="warning-message-container"></p>
-                            
+                            <p class="warnings" id="warning-message-container"></p> 
+
                         <button type="submit" id="btn2" class="form-button">Enviar</button>
                         
                     </div>
                 </div>
             </div>
         </div>
-    </form>      
-	
-
+    </form>   
+       
+    <script defer src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script defer src="contenidoFetch.js"></script>
+    <script defer src="variablesFetch.js"></script>
+    <script defer src="productosFetch.js"></script>
+    <script defer src="stock.js"></script>
+    <script defer src="modals.js"></script>
     <script defer src="contactForm.js"></script>
     <script defer src="carrito.js"></script>
 </body>
