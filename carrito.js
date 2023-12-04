@@ -14,8 +14,9 @@ let carrito = [];
 document.addEventListener('DOMContentLoaded', () => {
     if (localStorage.getItem('carrito')){
         carrito = JSON.parse(localStorage.getItem('carrito'))
-        actualizarCarrito()
+        actualizarCarrito();
     }
+
 });
 
 
@@ -42,17 +43,14 @@ finalizarCompraButton.addEventListener('click', () => {
     });
 
     const actualizarCarrito = () => {
-        contenedorCarrito.innerHTML = "" 
+        contenedorCarrito.innerHTML = "";
     
         if (carrito.length === 0) {
             // Si el carrito está vacío, muestra el mensaje correspondiente
-            
             mensajeCarritoVacio.style.display = 'block';
             finalizarCompraButton.style.display = 'none';
             vaciarCarritoButton.style.display = 'none';
-            precioTotalElement.style.display = 'none';
-            
-            
+            precioTotalElement.style.display = 'none';      
         } else {
             mensajeCarritoVacio.style.display = 'none';
     
@@ -61,9 +59,7 @@ finalizarCompraButton.addEventListener('click', () => {
                 const div = document.createElement('div')
                 div.className = ('productoEnCarrito')
                 div.innerHTML = `
-                    <div>
-                    <img src="${prod.img}" alt="${prod.nombre}">
-                    </div>                    
+                    <img src="${prod.img}" alt="${prod.nombre}">                 
                     <p class="texto-carrito">${prod.nombre}</p>
                     <p class="precio">Precio:$${prod.precio}</p>
                     <p class="cantidad">Cantidad: <span id="cantidad">${prod.cantidad}</span></p>
@@ -103,24 +99,25 @@ finalizarCompraButton.addEventListener('click', () => {
                     <div class="center">
                     <button id="agregar${producto.id}" class="boton-agregar">Agregar <i class="fas fa-shopping-cart"></i></button>
                     </div>
-                    `;
+                    </button>`;
         
             contenedorProductos.appendChild(div)
 
             const boton = document.getElementById(`agregar${producto.id}`)
-   
+
             boton.addEventListener('click', () => {
                 agregarAlCarrito(producto.id);
             });
+
         });
 
 
-        const agregarAlCarrito = (prodId) => {
-            const existe = carrito.some (prod => prod.id === prodId) 
-            if (existe){ 
-                carrito = carrito.map (prod => { 
-                    if (prod.id === prodId){
-                    prod.cantidad++
+    const agregarAlCarrito = (prodId) => {
+        const existe = carrito.some (prod => prod.id === prodId) 
+        if (existe){ 
+            carrito = carrito.map (prod => { 
+                if (prod.id === prodId){
+                    prod.cantidad++;
             }
             return prod;
         });
@@ -129,7 +126,7 @@ finalizarCompraButton.addEventListener('click', () => {
         carrito.push({ ...item, cantidad: 1 });
     }
     
-    actualizarCarrito(); 
+        actualizarCarrito(); 
     };
 
 

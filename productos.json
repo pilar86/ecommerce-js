@@ -2,7 +2,11 @@
     {
         "img": "./img/BoC-camaro.jpg",
         "nombre":"SOFA CAMARO",
-        "precio": "5.390.123"
+        "precio": "5.390.123",
+        "colores":[
+            {"nombre": "Gris", "imm": "./img/camaro-gris"},
+            {"nombre": "Verde", "img":"./img/camaro-verde"}
+        ]
     },
 
     {

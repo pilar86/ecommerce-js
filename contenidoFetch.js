@@ -1,5 +1,7 @@
 const retornoCardProducto = (contenido)=> {
-    const {img, nombre, precio, id} = contenido
+    const {img, nombre, precio, id,} = contenido;
+
+    
     return `<main id="contenedor-productos">
             </main>  
                     <img src=${img} alt= "">
@@ -10,13 +12,18 @@ const retornoCardProducto = (contenido)=> {
 }
 
 const obtenerContenido = (URL)=> {
-    let cardsProductos = ""
-        fetch(URL)
+    
+    fetch(URL)
         .then((response)=> response.json())
         .then((data)=> {
-            for (contenido of data) {
-                cardsProductos += retornoCardProducto(contenido)
+            const contenidoDom = document.querySelector("#contenedor-productos");
+            let cardsProductos = "";
+
+            for (const contenido of data) {
+                cardsProductos += retornoCardProducto(contenido);
             }
-            contenidoDom.innerHTML = cardsProductos
+
+            contenidoDom.innerHTML = cardsProductos;
         })
 }
+
